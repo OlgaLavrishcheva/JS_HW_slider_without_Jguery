@@ -1,3 +1,7 @@
-let carousel = new SwipeCarousel('#myCarousel', '.item');
+let carousel = new SwipeCarousel({
+    containerID: '#carousel',
+    interval: 2000,
+    slideID: '.slide'
+});
 
-carousel.init()
+carousel.init();
