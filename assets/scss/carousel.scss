@@ -1,0 +1,120 @@
+.carousel {
+    min-height: max-content;
+}
+
+.slides {
+    position: relative;
+    min-height: 500px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 1s;
+    font-size: 40px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url(/libs/img/banh_1.png);
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(/libs/img/banh_2.jpg);
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(/libs/img/banh_3.jpg);
+}
+
+.slide:nth-of-type(4) {
+    background-image: url(/libs/img/banh_4.jpg);
+}
+
+.slide:nth-of-type(5) {
+    background-image: url(/libs/img/banh_5.jpg);
+}
+
+.controls {
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.control-prev {
+    left: 0;
+    color: rgba(197, 230, 230, 0.781);
+}
+
+.control-pause {
+    left: calc(50% - 40px);
+    color: rgba(255, 255, 255, 0.3);
+    
+}
+
+.control-next {
+    right: 0;
+    color: rgba(197, 230, 230, 0.781);
+}
+
+.indicators {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.indicator {
+    display: inline-block;
+    padding: 5px;
+    min-width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    cursor: pointer;
+    background-image: url(/libs/img/1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.indicator.active {
+    background-image: url(/libs/img/2.png);
+}
+
+.fas, .far {
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.far:hover {
+    color: rgba(240, 255, 255, 0.842);
+    transition: 1s;
+}

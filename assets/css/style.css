@@ -1,95 +1,163 @@
-/*
-essential styles:
-these make the slideshow work
-*/
-
 body {
-    font-family: Arial, serif;
+  font-family: 'Roboto', sans-serif;
+  background: #affcc2;
+  background-image: url(/libs/img/bacground1.jpg);
+  background-size: cover;
+  margin: 0;
+}
+
+.common-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1000px;
+  background-color: rgba(253, 253, 251, 0.336);
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  text-shadow: 3px 3px 10px #ff8800, -3px -3px 10px #fafa7a;
+  color: #083b0a;
+  font-weight: 900;
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 0.05em;
+}
+
+.carousel {
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
 }
 
 .slides {
-    position: relative;
-    height: 150px;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
+  position: relative;
+  min-height: 500px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
 }
 
 .slide {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 1;
-    transition: opacity 1s;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  font-size: 40px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .active {
-    opacity: 1;
-    z-index: 2;
-}
-
-/*
-non-essential styles:
-just for appearance; change whatever you want
-*/
-
-.slide {
-    font-size: 40px;
-    padding: 40px;
-    box-sizing: border-box;
-    background: #333;
-    color: #fff;
+  opacity: 1;
+  z-index: 5;
 }
 
 .slide:nth-of-type(1) {
-    background: red;
+  background-image: url(/libs/img/banh_1.png);
 }
 
 .slide:nth-of-type(2) {
-    background: orange;
+  background-image: url(/libs/img/banh_2.jpg);
 }
 
 .slide:nth-of-type(3) {
-    background: green;
+  background-image: url(/libs/img/banh_3.jpg);
 }
 
 .slide:nth-of-type(4) {
-    background: blue;
+  background-image: url(/libs/img/banh_4.jpg);
 }
 
 .slide:nth-of-type(5) {
-    background: purple;
+  background-image: url(/libs/img/banh_5.jpg);
+}
+
+.controls {
+  position: absolute;
+  text-align: center;
+  list-style: none;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+}
+
+.control-prev {
+  left: 0;
+  color: rgba(197, 230, 230, 0.781);
+}
+
+.control-pause {
+  left: calc(50% - 40px);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.control-next {
+  right: 0;
+  color: rgba(197, 230, 230, 0.781);
 }
 
 .indicators {
-    list-style: none;
-    margin: 10px;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-
-.indicator,
-.control {
-    display: inline-block;
-    padding: 5px;
-    background-color: #333;
-    color: #fff;
-    height: 24px;
-    min-width: 24px;
-    padding: 5px 10px;
-    cursor: pointer;
-    user-select: none;
-    text-align: center;
+.indicator {
+  display: inline-block;
+  padding: 5px;
+  min-width: 50px;
+  height: 50px;
+  margin: 5px 10px;
+  cursor: pointer;
+  background-image: url(/libs/img/1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .indicator.active {
-background-color: crimson;
+  background-image: url(/libs/img/2.png);
 }
 
-.fas,
-.far {
-    font-size: 24px;
+.fas, .far {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.far:hover {
+  color: rgba(240, 255, 255, 0.842);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }

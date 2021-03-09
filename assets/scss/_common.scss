@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #affcc2;
+    background-image: url(/libs/img/bacground1.jpg);
+    background-size: cover;
+    margin: 0;
+}
+
+.common-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 1000px;
+    background-color: rgba(253, 253, 251, 0.336);
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    text-shadow: 3px 3px 10px rgb(255, 136, 0), -3px -3px 10px rgb(250, 250, 122);
+    color: #083b0a;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 0.05em;
+}
