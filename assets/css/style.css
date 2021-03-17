@@ -140,14 +140,14 @@ h1 {
   height: 50px;
   margin: 5px 10px;
   cursor: pointer;
-  background-image: url(/libs/img/1.png);
+  background-image: url(../../libs/img/1.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .indicator.active {
-  background-image: url(/libs/img/2.png);
+  background-image: url(../../libs/img/2.png);
 }
 
 .fas, .far {
