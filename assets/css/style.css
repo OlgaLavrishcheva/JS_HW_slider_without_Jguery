@@ -1,7 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #affcc2;
-  background-image: url(/libs/img/bacground1.jpg);
+  background-image: url(../../libs/img/bacground1.jpg);
   background-size: cover;
   margin: 0;
 }
@@ -67,23 +67,23 @@ h1 {
 }
 
 .slide:nth-of-type(1) {
-  background-image: url(/libs/img/banh_1.png);
+  background-image: url(../../libs/img/banh_1.png);
 }
 
 .slide:nth-of-type(2) {
-  background-image: url(/libs/img/banh_2.jpg);
+  background-image: url(../../libs/img/banh_2.jpg);
 }
 
 .slide:nth-of-type(3) {
-  background-image: url(/libs/img/banh_3.jpg);
+  background-image: url(../../libs/img/banh_3.jpg);
 }
 
 .slide:nth-of-type(4) {
-  background-image: url(/libs/img/banh_4.jpg);
+  background-image: url(../../libs/img/banh_4.jpg);
 }
 
 .slide:nth-of-type(5) {
-  background-image: url(/libs/img/banh_5.jpg);
+  background-image: url(../../libs/img/banh_5.jpg);
 }
 
 .controls {
